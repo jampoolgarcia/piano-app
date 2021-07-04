@@ -1,0 +1,13 @@
+<div class="row d-flex justify-content-center align-items-center vh-100">
+  <div class="col-4">
+    <div class="list-group">
+      <a 
+        *ngFor="let c of colors; index as i"  
+        (click)="playSound(i+1)" 
+        [style.background]="c" 
+        class="list-group-item list-group-item-action">
+      </a>
+    </div>
+  </div> 
+</div>
+
